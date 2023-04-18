@@ -2,8 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Expenses from "./components/Expenses";
 
-
-function App() {
+const App = () => {
     const expenses = [
         {
             date: new Date(2023, 0, 10),
@@ -16,6 +15,7 @@ function App() {
             price: 99.99
         }
     ]
+
     return (
         <div className={'expenses'}>
             <Expenses expenses={expenses}></Expenses>
